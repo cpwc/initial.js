@@ -1,8 +1,26 @@
 {
-  "name": "initial.js",
-  "version": "0.2.0",
+  "name": "initial-js",
+  "version": "0.3.1",
+  "description": "jQuery plugin library for generating user avatars from their initials.",
+  "author": "Wei Cheng <calvinpohwc@gmail.com>",
+  "main": "initial.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cpwc/initial.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cpwc/initial.js/issues"
+  },
+  "keywords": [
+    "inital",
+    "jquery",
+    "avatar",
+    "profile",
+    "initials"
+  ],
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-uglify": "^0.4.0"
-  }
+  },
+  "license": "MIT"
 }
