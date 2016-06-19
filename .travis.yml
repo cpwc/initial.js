@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+- '0.11'
+- '0.10'
+deploy:
+  provider: npm
+  email: calvinpohwc@gmail.com
+  api_key:
+    secure: SEfq+q3/hBtF7tk7f8sZxxw8X6nTHckgp4xuC/Vg45QN57Rmxb7/+WtuHvMTbaoHi+wL9HJkFGCXihVIlg4E3NcNZpGfMdbR6PUISLYZky5usDEqfazp4H52aDqqXAb8KJqai6qrLHtDrzoRzMX2QTT6+RYAAyyt2mTLN6sy4ZEW6Lo/eRdF1ZYEUdvwc9JfkrkTciCQ7Dbl4GXApGHEf3nr51fKmOH5Tw/pF9XMr1DgXYnQ8i5xeoQL6bNuUMIE+F830w7JQkzCC9COjuJ9HriFK6dA4LVmfjV0A+JykEChiOsYxctdOXGCSGg3dilVYTFQ3A0cF52BL17LzS5yPfG73+9EvsbdBVhvTdaYAn+svJ0df3xi0ezX/yrR9XMS4gqtHo49VQO2Ki7B8VLPKewWmmZUcH2MBI+clC1A5IfhImMWPCBSHtroYLHFUhKtp+nDT1+i1TYfajncvcFt/NL+nMgw7XbQnt+ln+28AJL+EPO08Ijmkm/RIn2+j8XCSwDId2NJZKeUZIp/mAIBNuIBnqQLDRD19/G7j+IWdlpQoH7w6KFGa4UU6D1RHzGsm4r69/gi41o7AbdOcFZs3NBrhKrMJLXeperz78/JqgamJDGJuL7HSszI/E1MXZcHWLfebKXv29mtAWHni+oU2jBvIfwXyRgOURPthW9EA3w=
+  on:
+    tags: true
+    repo: cpwc/initial.js
