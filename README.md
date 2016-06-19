@@ -1,37 +1,32 @@
-**initial.js**
-==========
+# initial.js
+
+[![Build Status](https://travis-ci.org/cpwc/initial.js.svg?branch=master)](https://travis-ci.org/cpwc/initial.js)
+
 Simple jQuery plugin to make Gmail like text avatars for profile pictures.
+Credits: Original plugin and author https://github.com/judesfernando/initial.js
 
----
-
-[Demo][1]
---
-Browser compatibility
----
+## Browser compatibility
 
  - Chrome
  - Firefox
  - Opera 9+
  - Safari 3.2+
  - iOS Safari 3.2+
- - Android Browser 3+ 
-
-Usage
---
- 
-**Markup**
-
->  &lt;img data-name=&quot;Steve&quot; class=&quot;profile&quot;/&gt;
-
-**jQuery code**
-
- > $('.profile').initial(); 
+ - Android Browser 3+
 
 
-  [1]: http://judelicio.us/initial.js/
-  
-  Options
---
+ ## Usage
+
+ ```html
+ <img data-name="Steve" class="profile">
+```
+
+```js
+$('.profile').initial();
+```
+
+## Options
+
 **Below options can be overridden with data-attributes inside the image element. Refer to the "data-attribute" column for related data-attribute for each option**
 
 | Option      | data-attribute   | Description                                                    | Default                                                                                            |
@@ -47,5 +42,8 @@ Usage
 | radius      | data-radius      | Rounded corners                                                | 0                                                                                                  |
 | seed        | data-seed        | Number to randomize the background color                       | 0                                                                                                  |
 | src         | data-src         | Image url to load instead of initial text if available         | null                                                                                               |
-| saturation  | data-saturation  | Background color saturation; Between 0 and 1                   | 0.8                                                                                              |
-| brightness  | data-brightness  | Background color brightness; Between 0 and 1                   | 0.5                                                                                              |
+
+
+### License
+
+initial.js is [MIT licensed](./LICENSE). All credit to original [author and contributors](https://github.com/judesfernando/initial.js/graphs/contributors).
