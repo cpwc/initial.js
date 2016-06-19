@@ -1,6 +1,6 @@
 {
   "name": "initial-js",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "jQuery plugin library for generating user avatars from their initials.",
   "author": "Wei Cheng <calvinpohwc@gmail.com>",
   "main": "initial.js",
