@@ -33,18 +33,26 @@
       settings = $.extend(settings, e.data());
 
       if (settings.src) {
-        e.css({
+        $.ajax({
+        method :"HEAD",
+        url: settings.src,
+        processData: false,
+        global:false,
+        success: function(d){
+          console.log(d);
+          e.css({
           'width': settings.width + 'px',
           'height': settings.height + 'px',
           'border-radius': settings.radius + 'px',
           '-moz-border-radius': settings.radius + 'px'
         }).attr("src", settings.src);
-
-        return;
+          return;
+        },
+        error: function(event) {
+        }
+        });
       }
-
-      settings.name = settings.name || 'DaMaVaNd';
-
+      
       // making the text object
       var c = settings.name.split(" ", settings.wordCount).map(function(str) {
         return str.substr(0, settings.charCount).toUpperCase();
